@@ -9,7 +9,7 @@ fi
 
 # Download config directly
 echo "Downloading tmux config..."
-curl -sSL https://raw.githubusercontent.com/tholbrook9/dotfiles/.config/tmux/tmux.conf -o ~/.tmux.conf
+curl -sSL https://raw.githubusercontent.com/tholbrook9/dotfiles/main/.config/tmux/tmux.conf -o ~/.tmux.conf
 
 # Install TPM for plugins
 if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
