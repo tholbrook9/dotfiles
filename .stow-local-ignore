@@ -3,9 +3,6 @@
 # Ignore scripts directory
 scripts
 
-# Ignore windows terminal directory
-windowsterminal
-
 # Git files
 \.git
 \.gitignore
