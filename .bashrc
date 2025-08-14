@@ -121,3 +121,16 @@ alias ha='cd /mnt/homeassistant'
 #1Password ssh-agent aliases
 alias ssh='ssh.exe'
 alias ssh-add='ssh-add.exe'
+
+# Simple SSH wrapper for tmux with ssh: prefix
+ssh() {
+    if [ -n "$TMUX" ]; then
+        # Get just the hostname (handles user@host, removes everything after @)
+        local host=$(echo "$1" | sed 's/.*@//' | sed 's/ .*//')
+        tmux rename-window "ssh:$host"
+        command ssh.exe "$@"
+        tmux set-window-option automatic-rename on
+    else
+        command ssh.exe "$@"
+    fi
+}

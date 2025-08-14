@@ -1,7 +1,7 @@
 # Comments and blank lines are allowed
 
 # Ignore scripts directory
-^/scripts
+scripts
 
 # Git files
 \.git
@@ -9,8 +9,8 @@
 \.gitmodules
 
 # Documentation
-^/README.*
-^/LICENSE.*
+README.*
+LICENSE.*
 
 # Backup files
 .+~
@@ -18,3 +18,5 @@
 .*\.swp
 
 \.DS_Store
+
+\.stow-local-ignore
