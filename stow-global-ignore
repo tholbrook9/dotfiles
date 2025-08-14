@@ -1,0 +1,20 @@
+# Comments and blank lines are allowed
+
+# Ignore scripts directory
+^/scripts
+
+# Git files
+\.git
+\.gitignore
+\.gitmodules
+
+# Documentation
+^/README.*
+^/LICENSE.*
+
+# Backup files
+.+~
+\#.*\#
+.*\.swp
+
+\.DS_Store
